@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- GOOGLE FONT  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+    <title>Light House</title>
+</head>
+
+<style>
+    
+body {
+    overflow-x: hidden;
+    font-family: 'Lora', serif;
+    background: black;
+}
+h1,h2,h3,h4,h5,h6 {
+}
+a {
+    font-family: 'Lora', serif;
+}
+h1 {
+    letter-spacing: 8px;
+}
+p{
+    font-family: 'Lora', serif;
+    width: 80%;
+}
+/* section {
+    width: 100vw;
+    height: 100vh;
+} */
+#head {
+    width: 100vw;
+    height: 100vh; 
+    max-width:100%; 
+    background-color: black;
+    color: white;
+}
+#head h1 {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#intro {
+    background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1545866282-9a1bb35f3b8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1006&q=80"); */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white;
+}
+#intro .row {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#intro h1 {
+    margin: 20% 0;
+}
+#intro .inside-intro {
+    width: 70%;
+}
+
+#content {
+    background-color: black;
+    color: white;
+    padding: 0 3%;
+}
+#content .row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+#content h3 {
+    padding: 30px 0;
+}
+#content img {
+    width: 70%;
+}
+
+@media only screen and (max-width:759px){
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 30px;
+    }
+}
+@media only screen and (max-width:986px){
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 30px;
+    }
+}
+@media only screen and (min-width:986px){
+    .img2 {
+        float: right;
+    }
+}
+.centerImg {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+}
+#featured {
+    background-color: black;
+    color: white;
+    height: 90vh;
+    max-height: 90vh;
+    
+}
+.thiss {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center center;
+    background-image: url("https://images.unsplash.com/photo-1560872222-d31fdc584c2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+} 
+.thiss img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#buy {
+    background: black;
+    color: white;
+    /* padding: 3% 0 0 0; */
+    padding: 80px 0 50px 0;
+
+}
+#buy .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#buy img {
+    height: 70%;
+    width: 70%;
+    padding: 3%;
+}
+#buy .row div {
+    margin: 30px 0;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+#footer h2 {
+    font-size: 2.5rem;
+}
+</style>
+
+<body>
+    <section id="head">
+        <h1><b>LIGHTHOUSE</b></h1>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="#">LIGHTHOUSE</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active">Decour</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active">Item</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active">Hire</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="col-lg-6">
+                        <div class="inside-intro">
+                            <h1>Light-house
+                                Makes Stand Out
+                            </h1>
+                            <p>We're studio that makes handcraft to make your house lightful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1588571590924-433cc2020a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h3>We're making more statues and more lighter</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam amet deserunt quaerat. Impedit
+                        libero quis, aliquid blanditiis accusantium, mollitia aut voluptas iste tenetur consectetur
+                        maiores, quos est! Est, ad amet.</p>
+                    <a href="">See More Craft</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
+                        alt="">
+
+                </div>
+                <div class="col-lg-4">
+
+                    <img class="centerImg"
+                        src="https://images.unsplash.com/photo-1558013304-f6e90865f416?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=618&q=80"
+                        alt="">
+
+                </div>
+                <div class="col-lg-4">
+
+                    <img class="img2"
+                        src="https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+    <section id="final" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <h3>This is all about aesthetics,
+                            make things happen happy
+                            by just watching our statue.
+                        </h3>
+                        <a href="">SEE ALL PRODUCTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 thiss">
+                    <div class="col-lg-6 or">
+                        <h3 style="margin: 85% 0 30px 0; width: 70%;">This is all about aesthetics,
+                            make things happen happy
+                            by just watching our statue.
+                        </h3>
+                        <a href="">SEE ALL PRODUCTS</a>
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="buy">
+        <div class="container">
+            <h5>BUY CUSTOM CERAMICS</h5>
+            <div class="row">
+                <br>
+                <div class="col-lg-3">
+                    <img src="https://images.unsplash.com/photo-1574223017597-09f6b764b9e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <!-- <img src="https://images.unsplash.com/photo-1572982758354-c097406beae5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""> -->
+                </div>
+                <div class="col-lg-3">
+                    <h5>/01</h5>
+                    <h2>
+                        TERRASO
+                    </h2>
+                </div>
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat deleniti fuga quae odit
+                        vero ipsa minima quibusdam ab? Nemo voluptatum optio possimus necessitatibus molestias! Id ipsam
+                        itaque quidem deleniti.</p>
+                    <a href="">Buy Now</a>
+                </div>
+                <br>
+
+                <div class="col-lg-3">
+                    <img src="https://images.unsplash.com/photo-1588290846538-7e622c5667b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <!-- <img src="https://images.unsplash.com/photo-1579868511220-2ffc271946e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""> -->
+                </div>
+                <div class="col-lg-3">
+                    <h5>/02</h5>
+                    <h2>
+                        UMBROZO
+                    </h2>
+                </div>
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat deleniti fuga quae odit
+                        vero ipsa minima quibusdam ab? Nemo voluptatum optio possimus necessitatibus molestias! Id ipsam
+                        itaque quidem deleniti.</p>
+                    <a href="">Buy Now</a>
+                </div>
+                <br>
+
+                <div class="col-lg-3">
+                    <img src="https://images.unsplash.com/photo-1571086463042-58d165fc84ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                </div>
+                <div class="col-lg-3">
+                    <h5>/01</h5>
+                    <h2>
+                        TERRASO
+                    </h2>
+                </div>
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat deleniti fuga quae odit
+                        vero ipsa minima quibusdam ab? Nemo voluptatum optio possimus necessitatibus molestias! Id ipsam
+                        itaque quidem deleniti.</p>
+                    <a href="">Buy Now</a>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <center>
+                        <h2>Want to make something awesome ?</h2>
+                        <h2>Let's discuss now</h2>
+                        <br>
+
+                        <a href="mailto:" style="color: red;">
+                            <h3>Contact Me</h3>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
